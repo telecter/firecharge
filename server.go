@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	fs := http.FileServer(http.Dir("./frontend/dist"))
+	fs := http.FileServer(http.Dir("./client/dist"))
 	http.Handle("/", fs)
 
 	fmt.Println("Server listening on port 3000")
