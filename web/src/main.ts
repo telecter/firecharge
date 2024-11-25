@@ -3,10 +3,9 @@ import App from './App.vue';
 import { createRouter, createWebHashHistory } from 'vue-router';
 import ServerPage from './pages/ServerPage.vue';
 import Home from './pages/Home.vue';
-import 'halfmoon/css/halfmoon.min.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap'
 import AddServer from './pages/AddServer.vue';
-
-
 const routes = [
     { path: '/', component: Home },
     { name: 'server', path: '/server/:id', component: ServerPage },

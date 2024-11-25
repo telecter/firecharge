@@ -10,7 +10,12 @@
   </header>
   <hr>
   <main class="container">
-    <RouterView />
+    <Suspense>
+      <RouterView />
+      <template #fallback>
+        Loading...
+      </template>
+    </Suspense>
   </main>
 </template>
 
